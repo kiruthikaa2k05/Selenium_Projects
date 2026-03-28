@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;RelativeLocators&apos; to &apos;SeleniumRelativeLocators/src/test/java&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumRelativeLocators&apos;&#x0D;&#x0A;- Destination element: &apos;SeleniumRelativeLocators/src/test/java&apos;&#x0D;&#x0A;- Original element: &apos;SeleniumRelativeLocators/src/main/java/RelativeLocators&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;RelativeLocators" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1772688112520" version="1.0"/>
+</session>

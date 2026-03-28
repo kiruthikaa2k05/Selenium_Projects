@@ -1,0 +1,5 @@
+package com.swaglabs.seleniumiuframework.generic_utility;
+
+public class FileUtility {
+
+}

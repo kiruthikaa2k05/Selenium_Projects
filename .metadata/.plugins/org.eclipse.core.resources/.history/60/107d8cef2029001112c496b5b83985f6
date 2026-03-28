@@ -1,0 +1,159 @@
+package com.swaglabs.seleniumuiframework.object_repository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class HomePage {
+	
+	WebDriver driver;
+	
+	 public HomePage( WebDriver driver) {
+		 PageFactory.initElements(driver, this);
+		 
+	 }
+	//Menu button
+	@FindBy(xpath="//button[.='Open Menu']")
+	private WebElement menuButton;
+	//all items
+	@FindBy(linkText="All Items")
+	private WebElement allItems;
+	//about
+	@FindBy(linkText="About")
+	private WebElement about;
+	//logout
+	@FindBy(linkText="Logout")
+	private WebElement logOut;
+	//reset app state
+	@FindBy(linkText="Logout")
+	private WebElement resetAppState;
+	
+	//filter dropdown
+	@FindBy(css="[class='product_sort_container']")
+	private WebElement filterDropDown;
+	
+	//addToCart
+	@FindBy(css="[class='shopping_cart_link']")
+	private WebElement addToCart;
+	
+	//adding product into cart
+	@FindBy(id="add-to-cart-sauce-labs-backpack")
+	private WebElement addProductToCart;
+	
+	//twitter link
+	@FindBy(xpath="//a[.='Twitter']")
+	private WebElement TwitterLink;
+	//FaceBook Link
+	@FindBy(xpath="//a[.='Facebook']")
+	private WebElement FaceBookLink;
+	//LinkedIn Link
+	@FindBy(xpath="//a[.='LinkedIn']")
+	private WebElement LinkedInLink;
+	
+
+	
+	public WebElement getMenuButton() {
+		return menuButton;
+	}
+
+	public void clicktMenuButton() {
+		getMenuButton().click();
+	}
+
+	public WebElement getAllItems() {
+		return allItems;
+	}
+
+	public void clickAllItems() {
+		getAllItems().click();
+	}
+
+	public WebElement getAbout() {
+		return about;
+	}
+
+	public void clickAbout() {
+	getAbout().click();
+	}
+
+	public WebElement getLogOut() {
+		return logOut;
+	}
+
+	public void clickLogOut() {
+	getLogOut().click();
+	}
+
+	public WebElement getResetAppState() {
+		return resetAppState;
+	}
+
+	public void clickResetAppState() {
+		getResetAppState().click();
+	}
+
+	public WebElement getFilterDropDown() {
+		return filterDropDown;
+	}
+
+	public void clickFilterDropDown() {
+		getFilterDropDown().click();
+	}
+
+	public WebElement getAddToCart() {
+		return addToCart;
+	}
+
+	public void clickAddToCart() {
+		getAddToCart().click();
+	}
+
+	public WebElement getAddProductToCart() {
+		return addProductToCart;
+	}
+
+	public void clickAddProductToCart() {
+		getAddProductToCart().click();
+	}
+
+	public WebElement getTwitterLink() {
+		return TwitterLink;
+	}
+
+	public void clickTwitterLink() {
+		getTwitterLink().click();
+	}
+
+	public WebElement getFaceBookLink() {
+		return FaceBookLink;
+	}
+
+	public void clickFaceBookLink() {
+	     getFaceBookLink().click();
+	}
+
+	public WebElement getLinkedInLink() {
+		return LinkedInLink;
+	}
+
+	public void clickLinkedInLink() {
+		getLinkedInLink().clear();
+	}
+	
+	//Business Logic
+	public void ClickmenuButton() {
+		clicktMenuButton();
+		clickAllItems();
+		clickAbout();
+		clickResetAppState();
+		clickLogOut();
+	}
+	
+	public void clickCartButton() {
+		clickAddToCart();
+	}
+	
+	
+
+}

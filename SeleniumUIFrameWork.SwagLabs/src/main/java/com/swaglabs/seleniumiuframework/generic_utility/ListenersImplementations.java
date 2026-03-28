@@ -1,0 +1,66 @@
+package com.swaglabs.seleniumiuframework.generic_utility;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.orangehrm.seleniumiuframwork.generic_utility.BaseClass;
+import com.orangehrm.seleniumiuframwork.generic_utility.ExtendReportUtility;
+import com.orangehrm.seleniumiuframwork.generic_utility.ScreenshotUtility;
+
+public class ListenersImplementations {
+	
+	//ExtentReports extent=new ExtentReports();
+		//ExtentSparkReporter spark=new ExtentSparkReporter("/Reports/test_result.html");
+		//ExtentTest test;
+		
+		ExtentReports extent = ExtendReportUtility.getExtentInstance();
+		ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+		WebDriver driver;
+
+	
+		public void onTestStart(ITestResult result) {
+			ExtentTest et = extent.createTest(result.getMethod().getMethodName());
+			//test = extent.createTest(result.getMethod().getMethodName()); //capture the name of the test report
+			test.set(et);
+		}
+
+		
+		public void onTestSuccess(ITestResult result) { //pass the test case
+			test.get().pass("Test Status : Pass");
+		}
+
+		
+		public void onTestFailure(ITestResult result) { //fail the test case and print the exception
+			test.get().fail("Test Status : Fail");
+			test.get().fail(result.getThrowable());
+			Object obj = result.getInstance();
+			//creating object of any other class, so we must downcast it
+			BaseClass_SwagLabs bsc = (BaseClass_SwagLabs) obj;
+			WebDriver driver = bsc.driver;//establishing connection between that driver and this driver
+			ScreenshotUtility sc = new ScreenshotUtility(driver);
+			
+			try {
+				String path=sc.captureScreenshot(driver,result.getMethod().getMethodName());
+				//attach screenshot in the report
+				test.get().addScreenCaptureFromPath(path);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			extent.flush();
+		}
+
+		
+		public void onTestSkipped(ITestResult result) { //status of skipped tc
+			test.get().skip("Test status : Skip");
+			
+		}
+
+		public void onFinish(ITestContext context) {
+			extent.flush();
+			
+		}
+
+}

@@ -1,0 +1,5 @@
+package com.swaglabs.seleniumuiframework.object_repository;
+
+public class LoginPage {
+
+}

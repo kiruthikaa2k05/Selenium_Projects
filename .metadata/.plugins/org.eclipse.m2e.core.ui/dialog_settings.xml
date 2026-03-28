@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Java-Selenium\SeleniumUIFramework.OrangeHRM\pom.xml"/>
+			<item value="C:\Java-Selenium\SeleniumUIFramework.OrangeHRM\src\test\java\Demo\LoginUsingXmlOR.java"/>
+			<item value="C:\Java-Selenium\SeleniumTestNG\src\test\java\Practice\TestPractice.java"/>
+			<item value="C:\Java-Selenium\SeleniumJavaScriptExecutor\src\test\java\WindowScrolling\ClickAndHold.java"/>
+			<item value="C:\Java-Selenium\SeleniumSynchronization\src\test\java\SeleniumWait\FluentWaitc.java"/>
+			<item value="C:\Java-Selenium\SeleniumTraining\src\test\java\Assessments\assessment_iceHrm2.java"/>
+			<item value="C:\Java-Selenium\SeleniumPopups\src\test\java\HiddenDivisionPopup\Irct_application.java"/>
+			<item value="C:\Java-Selenium\SeleniumSelectClass\src\test\java\HandlingDropDowns\isMultiple.java"/>
+			<item value="C:\Java-Selenium\SeleniumLocators\src\test\java\Assessment4.java"/>
+			<item value="C:\Java-Selenium\SeleniumWebElementAPI\src\test\java\WebElementAPI\DropDown.java"/>
+			<item value="C:\Java-Selenium\SeleniumNavigation\src\test\java\Navigation\StaleElementException.java"/>
+			<item value="C:\Java-Selenium\SeleniumTraining\src\main\java\RelativeLocators"/>
+			<item value="C:\Java-Selenium\SeleniumLocators\pom.xml"/>
+			<item value="C:\Java-Selenium\SeleniumTraining"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.panimalar.seleniumUIFrameWork"/>
+			<item value="com."/>
+			<item value="com.panimalar"/>
+			<item value="com.panimalar.seleniumUIframework"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="SeleniumUIFrameWork.SwagLabs"/>
+			<item value="SeleniumGrid"/>
+			<item value="SeleniumUIFramework.OrangeHRM"/>
+			<item value="SeleniumTestNG"/>
+			<item value="SeleniumJavaScriptExecutor"/>
+			<item value="SeleniumWait"/>
+			<item value="SeleniumSynchronization"/>
+			<item value="SeleniumPopups"/>
+			<item value="SeleniumSelectClass"/>
+			<item value="SeleniumInterogationAPI"/>
+			<item value="SeleniumWebElementAPI"/>
+			<item value="SeleniumNavigation"/>
+			<item value="SeleniumManageMethod"/>
+			<item value="SeleniumRelativeLocators"/>
+			<item value="SeleniumLocators"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+</section>
